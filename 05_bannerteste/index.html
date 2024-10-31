@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Floricultura</title>
+    <style>
+        /* Paleta de cores */
+        :root {
+            --cor-vinho: #8C2641;
+            --cor-rosa: #BF3B6C;
+            --cor-rosa-claro: #F288AF;
+            --cor-amarelo: #F2B807;
+            --cor-laranja: #BF6415;
+        }
+
+        /* Estilo do banner */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px;
+            background: var(--cor-rosa-claro);
+            color: var(--cor-vinho);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+            color: var(--cor-vinho);
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            color: var(--cor-rosa);
+        }
+
+        /* Flores na borda do banner */
+        .flores {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(''); /* Caminho da imagem das flores */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            pointer-events: none;
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+        }
+
+        /* Botão de chamada para ação */
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: var(--cor-amarelo);
+            color: #ffffff;
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--cor-laranja);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="flores"></div>
+        <h1>Bem-vindo à Floricultura</h1>
+        <p>Flores frescas e exclusivas para todas as ocasiões</p>
+        <a href="#" class="cta-button">Compre agora</a>
+    </div>
+</body>
+</html>
